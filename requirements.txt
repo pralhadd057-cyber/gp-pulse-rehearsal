@@ -1,0 +1,10 @@
+# GP Pulse runtime dependencies.
+#
+# Deliberately minimal: the API server, storage, and brief generation are
+# all standard library. Only the vectorized detection engine needs
+# pandas/numpy. Nothing here requires network access to install beyond
+# these two packages (no FastAPI, no openai SDK, no ORM) -- important if
+# the hackathon network is flaky or a corporate proxy blocks pip.
+
+pandas>=2.0
+numpy>=1.24
